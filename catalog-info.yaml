@@ -1,0 +1,27 @@
+# Первый сервис
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: users-service
+  description: Сервис обработки пользователей
+  annotations:
+    github.com/repo: myorg/users-service # ссылка на репозиторий проекта
+spec:
+  type: service
+  lifecycle: production
+  owner: engineering-team
+
+---
+
+# Второй сервис
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: orders-service
+  description: Сервис обработки заказов
+  annotations:
+    github.com/repo: myorg/orders-service # ссылка на репозиторий проекта
+spec:
+  type: service
+  lifecycle: production
+  owner: commerce-team
